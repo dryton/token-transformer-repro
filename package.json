@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build-light": "token-transformer tokens ./tokens-transformed/tokens-light.json core,theme/01-light theme/02-dark --expandTypography=true --expandShadow=true --preserveRawValue=true",
+    "build-dark": "token-transformer tokens ./tokens-transformed/tokens-dark.json core,theme/01-light,theme/02-dark --expandTypography=true --expandShadow=true --preserveRawValue=true"
+  },
+  "devDependencies": {
+    "token-transformer": "^0.0.30"
+  }
+}
